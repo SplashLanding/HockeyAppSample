@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using HockeyApp;
 
 namespace HockeyAppSample.iOS
 {
@@ -13,16 +14,27 @@ namespace HockeyAppSample.iOS
 	[Register("AppDelegate")]
 	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
 	{
-		//
-		// This method is invoked when the application has loaded and is ready to run. In this 
-		// method you should instantiate the window, load the UI into it and then make the window
-		// visible.
-		//
-		// You have 17 seconds to return from this method, or iOS will terminate your application.
-		//
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+
+        //Michelle's
+        public const string API_KEY = "6052a295ea384e6bbbd30572d87504f7";
+
+        //Dylan's
+        public const string Dylan_API_KEY = "89ab15ddbfdb436e90f10e77383adcbb";
+
+        //
+        // This method is invoked when the application has loaded and is ready to run. In this 
+        // method you should instantiate the window, load the UI into it and then make the window
+        // visible.
+        //
+        // You have 17 seconds to return from this method, or iOS will terminate your application.
+        //
+        public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+            var manager = BITHockeyManager.SharedHockeyManager;
+            manager.Configure(Dylan_API_KEY);
+            manager.StartManager();
+
+            global::Xamarin.Forms.Forms.Init ();
 			LoadApplication (new HockeyAppSample.App ());
 
 			return base.FinishedLaunching (app, options);

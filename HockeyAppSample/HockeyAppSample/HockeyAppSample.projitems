@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CrashListener.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyPage.xaml.cs">
       <DependentUpon>MyPage.xaml</DependentUpon>
       <SubType>Code</SubType>

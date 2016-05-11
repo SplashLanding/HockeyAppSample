@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using HockeyApp;
 using HockeyApp.Metrics;
+using Xamarin.Forms.Internals;
 
 namespace HockeyAppSample.Droid
 {
@@ -30,6 +31,7 @@ namespace HockeyAppSample.Droid
             //Adding user metrics accroding to https://github.com/bitstadium/HockeySDK-Xamarin#user-metrics
             MetricsManager.Register(this, Application, Dylan_API_KEY);
             MetricsManager.EnableUserMetrics();
+
 
             global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new HockeyAppSample.App ());

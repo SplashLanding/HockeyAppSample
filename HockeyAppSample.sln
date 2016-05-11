@@ -17,7 +17,12 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HockeyAppSample", "HockeyAp
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{cd8f242b-920c-4081-a227-cc80600164d0}*SharedItemsImports = 4
+		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{d3192d96-12e2-4001-99f7-7ddc8806e8b9}*SharedItemsImports = 4
+		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{ae9b33ba-abf1-4977-ba14-e0c025799160}*SharedItemsImports = 4
+		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{56069142-7766-48f1-ba17-230600a8de5f}*SharedItemsImports = 4
 		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{4cade997-c9cc-42a4-a3ac-9db236c6d1a5}*SharedItemsImports = 13
+		HockeyAppSample\HockeyAppSample\HockeyAppSample.projitems*{bf81e8c3-d6f8-4c4d-938a-3106fa88aba7}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
